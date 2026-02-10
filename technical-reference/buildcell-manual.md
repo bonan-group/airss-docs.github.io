@@ -8,6 +8,7 @@ sidebar:
   nav: "docs"
 toc: true
 toc_sticky: true
+toc_label: "Contents"
 ---
 
 The construction of reasonable, or _sensible_, random structures is central to AIRSS. The Fortran `buildcell` tool is provided in the AIRSS package for this purpose. It can build structures from scratch, or modify structures specified using the CASTEP `.cell` format. The random structures generated are output in the CASTEP `.cell` format.
