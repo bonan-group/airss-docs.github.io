@@ -7,7 +7,7 @@ lang-ref: buildcell-manual
 sidebar:
   nav: "docs"
 toc: true
-toc_sticky: true
+toc_sticky: false
 toc_label: "Contents"
 ---
 

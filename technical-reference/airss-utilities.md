@@ -7,7 +7,7 @@ lang-ref: airss-utilities
 sidebar:
   nav: "docs"
 toc: true
-toc_sticky: true
+toc_sticky: false
 ---
 
 This page provides details of the various utilities included in the AIRSS package. They are grouped by function: core workflow scripts, structure generation, structure analysis, relaxation wrappers, file management, job management, and format conversion.
