@@ -45,4 +45,4 @@ defaults:
       path: zh
     values:
       lang: zh
-      base-url: "/zh/"
+      base-url: "zh/"
