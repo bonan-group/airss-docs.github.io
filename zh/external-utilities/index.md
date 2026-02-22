@@ -1,5 +1,5 @@
 ---
-title: "External Utilities"
+title: "外部工具"
 layout: single
 classes: wide
 lang: zh
@@ -8,85 +8,84 @@ sidebar:
   nav: "docs"
 ---
 
-AIRSS calls a number of external packages to perform specific tasks related to calculation and analysis. This page provides an overview of these packages.
+AIRSS调用了多个外部软件包来执行与计算和分析相关的特定任务。本页面提供了这些软件包的概述。
 
 spglib
 ------
 
-An excellent library for finding and handling crystal symmetries, written in C by Atsushi Togo.
+一个优秀的用于查找和处理晶体对称性的库，由Atsushi Togo用C语言编写。
 
 http://atztogo.github.io/spglib/
 
-> **Note:** This package is fetched and installed automatically.
+> **注意：** 此软件包会自动获取和安装。
 
 cellsymm
 --------
 
-This is a front-end to spglib, written by Michael Rutter.
+这是spglib的一个前端，由Michael Rutter编写。
 
 http://www.tcm.phy.cam.ac.uk/sw/check2xsf/cellsym.tgz
 
-> **Note:** This package is fetched and installed automatically. It will be replaced by `c2x` in due course.
+> **注意：** 此软件包会自动获取和安装。它将在适当时候被`c2x`替代。
 
 SYMMOL
 ------
 
-This Fortran code symmetrises a group of atoms. It can be downloaded [here](https://www.mtg.msm.cam.ac.uk/files/symmol.zip).
+此Fortran代码用于对一组原子进行对称化。可在[此处](https://www.mtg.msm.cam.ac.uk/files/symmol.zip)下载。
 
 1. T. Pilati and A. Forni, [J. Appl. Cryst. **31**, 503–504 (1998)](https://doi.org/10.1107/S0021889898002180)
 2. T. Pilati and A. Forni, [J. Appl. Cryst. **33**, 417 (2000)](https://doi.org/10.1107/S0021889800001801)
 
-Before compilation, a patch is applied to `symmol.f`.
+编译之前，需要对`symmol.f`应用一个补丁。
 
-> **Note:** This package is fetched and installed automatically.
+> **注意：** 此软件包会自动获取和安装。
 
 Castep
 ------
 
-A high performance plane wave pseudopotential total energy code. It is written and maintained by the [Castep Developers Group](http://www.castep.org/). The executable should be given the name `castep`. In other words, copy the default `castep.mpi`
-or `castep.serial` that is created after compiling Castep, and rename it to `castep`. This file should be placed in your path.
+一个高性能的平面波赝势总能量代码。它由[Castep开发者小组](http://www.castep.org/)编写和维护。可执行文件应命名为`castep`。换句话说，将编译Castep后创建的默认`castep.mpi`或`castep.serial`复制并重命名为`castep`。此文件应放置在您的路径中。
 
 OPTADOS
 -------
 
-Calculates high quality theoretical DOS, Projected-DOS, Joint-DOS, Optics and core-loss spectroscopy.
+计算高质量的理论态密度（DOS）、投影态密度、联合态密度、光学性质和核损失谱。
 
 http://www.tcm.phy.cam.ac.uk/~ajm255/optados/index.html
 
-Gulp (optional)
+Gulp（可选）
 ---------------
 
-Structure prediction may be performed using a variety of empirical force fields, as implemented in Julian Gale's powerful Gulp code.
+可以使用Julian Gale的强大Gulp代码中实现的各种经验力场进行结构预测。
 
 http://gulp.curtin.edu.au/gulp/
 
-LAMMPS (optional, not currently recommended)
+LAMMPS（可选，目前不推荐）
 --------------------------------------------
 
-Structural optimisation is not currently sufficiently stable in this MD focussed code.
+在这个以分子动力学为主的代码中，结构优化目前还不够稳定。
 
 http://lammps.sandia.gov/
 
 pspot
 -----
 
-This is a directory containing the default Castep `xx_00PBE.usp(cc)` pseudopotentials. In more recent versions of Castep the QC5 set of high-throughput potentials provide an alternative. These can be used for general searching, but tailored OTFG potentials are recommended for accurate results, and/or very high pressures. It is assumed that pspot is in your home directory. If not, set `PSPOT_DIR` appropriately. 
+这是一个包含默认Castep `xx_00PBE.usp(cc)`赝势的目录。在较新版本的Castep中，QC5高通量赝势集提供了一种替代选择。这些可用于一般搜索，但建议使用定制的OTFG赝势以获得准确结果和/或在非常高的压力下使用。假定pspot在您的主目录中。如果不是，请适当设置`PSPOT_DIR`。
 
 qhull
 -----
 
-Calculates the convex hulls.
+计算凸包。
 
 http://www.qhull.org/
 
-hull (optional)
+hull（可选）
 ---------------
 
-Ken Clarkson's convex hull code.
+Ken Clarkson的凸包代码。
 
 http://www.netlib.org/voronoi/hull.html
 
-antiprism (optional)
+antiprism（可选）
 ---------
 
 http://www.antiprism.com/files/antiprism-0.24.1.tar.gz
@@ -94,7 +93,7 @@ http://www.antiprism.com/files/antiprism-0.24.1.tar.gz
 R/Rscript
 ---------
 
-The statistical package R is used to visualise ternary convex hulls. The `ternary.r` scripts can be executed using `Rscript`. The `ggtern` packaged is required.
+统计软件R用于可视化三元凸包。`ternary.r`脚本可使用`Rscript`执行。需要`ggtern`软件包。
 
 https://cran.r-project.org/
 http://www.ggtern.com/
@@ -104,12 +103,12 @@ xmgrace
 
 http://plasma-gate.weizmann.ac.il/Grace/
 
-Xmgrace/Grace is useful for visualising results. `.agr` scripts are generated to facilitate this.
+Xmgrace/Grace用于可视化结果。生成`.agr`脚本以方便使用。
 
 cif2cell
 --------
 
-This handy python utility can convert from cif files to a variety of electronic structure codes, including Castep.
+这个方便的Python工具可以将cif文件转换为多种电子结构代码的格式，包括Castep。
 
 http://cif2cell.sourceforge.net/
 http://www.sciencedirect.com/science/article/pii/S0010465511000336

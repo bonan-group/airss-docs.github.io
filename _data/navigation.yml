@@ -42,22 +42,28 @@ zh:
     - title: 入门简介
       children:
         - title: 关于AIRSS
-          url: /zh/   
+          url: /zh/
         - title: 安装方法
           url: /zh/installation/
+        - title: 在Binder中使用AIRSS
+          url: /zh/airss-in-binder/
+    - title: 教程
+      children:
         - title: 样例
-          url: /zh/examples/
+          url: /zh/tutorials/examples/
     - title: 技术细节
       children:
-        - title: AIRSS模块
+        - title: AIRSS工具集
           url: /zh/airss-utilities/
-        - title: 外部模块
+        - title: 外部工具
           url: /zh/external-utilities/
         - title: Buildcell使用手册
           url: /zh/buildcell-manual/
+        - title: 构建结构
+          url: /zh/building-structures/
     - title: 链接
       children:
         - title: "Materials Theory Group"
           url: https://www.mtg.msm.cam.ac.uk/
-        - title: 下载AIRSS v0.9.1
-          url: http://bit.ly/2KtvEWU
+        - title: 下载AIRSS v0.9.4
+          url: https://bit.ly/43Oybz8
