@@ -43,6 +43,13 @@ defaults:
       base-url: "/"     
   - scope:
       path: zh
+      type: posts
     values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
       lang: zh
-      base-url: "zh/"
+      base-url: "/"     
